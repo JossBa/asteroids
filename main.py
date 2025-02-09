@@ -17,9 +17,12 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+        
+        player.update(dt)
         screen.fill((0,0,0))
         player.draw(screen)
 
+        # limit the framerate to 60 FPS
         pygame.display.flip()
         dt = time_clock.tick(60) / 1000
 
