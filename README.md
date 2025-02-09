@@ -1,2 +1,2 @@
 # asteroids
-Simple Astroids video game built in Python
+Simple Astroids video game built in Python.
